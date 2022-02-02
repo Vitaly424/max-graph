@@ -1,0 +1,30 @@
+.breadcrumbs {
+   display: flex;
+
+   li {
+      position: relative;
+      font-size: 14px;
+      line-height: 1.5;   
+
+      &:not(:last-child) {
+         margin-right: 22px;
+
+         &::before {
+            content: "/";
+            position: absolute;
+            right: -14px;
+            top: 1px;
+
+            color: #9A9CA5;
+         }
+      }
+   }
+
+   a {
+      color: var(--color-clay);
+   }
+
+   span {
+      color: #9A9CA5;
+   }
+}

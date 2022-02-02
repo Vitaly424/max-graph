@@ -1,0 +1,58 @@
+.table {
+   border-collapse: collapse;
+   width: 100%;
+
+   &__th {
+      padding-top: 32px;
+      padding-bottom: 32px;
+
+      &:first-child {
+         vertical-align: bottom;
+         padding-left: 28px;
+         font-weight: bold;
+         font-size: 18px;
+         line-height: 150%;
+         text-align: left;
+         color: var(--color-ebony);
+      }
+   }
+
+   &__body {
+      .table__row {
+         &:nth-child(odd) {
+            background-color: var(--color-athens);
+         }
+      }
+   }
+
+   &__col {
+      vertical-align: middle;
+      text-align: center;
+      padding: 16px 22px;
+
+      &:first-child {
+         text-align: left;
+      }
+
+      &:last-child {
+         padding-bottom: 32px;
+         padding-top: 32px;
+      }
+   }
+
+   &__heading {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 1.5;
+      text-align: center;
+      color: var(--color-ebony);
+      text-transform: uppercase;
+   }
+
+   &__per {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 1.5;
+      color: var(--color-storm);
+   }
+}

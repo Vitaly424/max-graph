@@ -1,0 +1,14 @@
+.services-section {
+   padding-top: 212px;
+   padding-bottom: 80px;
+
+   background-color: #fdfdfd;
+   background-image: url('../img/services/bg-image.jpg');
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+
+   &__list {
+      margin-bottom: 81px;
+   }
+}     

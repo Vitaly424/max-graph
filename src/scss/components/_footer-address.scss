@@ -1,0 +1,18 @@
+.footer-address {
+   padding-top: 17px;
+
+   &__item {
+      font-style: normal;
+
+      &:not(:last-child) {
+         margin-bottom: 5px;
+      }
+   }
+
+   &__name {
+      color: var(--color-light);
+      font-size: 16px;
+      line-height: 1.6;
+      font-style: normal;
+   }
+}

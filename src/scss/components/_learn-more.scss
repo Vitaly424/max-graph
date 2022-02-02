@@ -1,0 +1,18 @@
+.learn-more {
+   margin-top: 81px;
+   position: relative;
+   z-index: 10;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   &__text {
+      margin-right: 40px;
+
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 1.5;
+      color: var(--color-ebony);
+   }
+}

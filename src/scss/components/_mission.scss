@@ -1,0 +1,53 @@
+.mission {
+   &__list {
+      --mission-gap: 94px;
+
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: calc(var(--mission-gap) * 2);
+   }
+
+   &__item {
+      position: relative;
+      text-align: center;
+
+      &:nth-child(2) {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+      }
+
+      &:not(:last-child) {
+         &::after {
+            content: "";
+
+            position: absolute;
+            top: 0;
+            right: calc(-1 * var(--mission-gap));
+   
+            width: 1px;
+            height: 100%;
+
+            background-image: url("../img/divider.svg");
+            background-position: center;
+            background-repeat: no-repeat;
+         }
+      }
+   }
+
+   &__subtitle {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 1.5;
+      color: var(--color-ebony);
+
+      margin-top: 24px;
+      margin-bottom: 8px;
+   }
+
+   &__descr {
+      font-size: 16px;
+      line-height: 1.6;
+      color: var(--color-storm);
+   }
+}

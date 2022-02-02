@@ -1,0 +1,35 @@
+.testimonials {
+   padding: 97px 0;
+   padding-bottom: 0;
+
+   background-color: var(--color-athens);
+
+   &__items {
+      position: relative;
+      padding-bottom: 25px;
+   }
+
+   &__nav {
+      position: absolute;
+      right: 13px;
+      bottom: 0;
+   }
+
+   &__title {
+      margin-bottom: 60px;
+   }
+
+   &__content {
+      max-width: 612px;
+   }
+
+   &__container {
+      display: flex;
+      justify-content: space-between;
+   }
+
+   &__image {
+      position: relative;
+      z-index: 10;
+   }
+}

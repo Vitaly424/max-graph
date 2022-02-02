@@ -1,0 +1,65 @@
+.facts-element {
+  &__circle {
+    position: relative;
+    margin-bottom: 20px;
+
+    width: 148px;
+    height: 148px;
+    --progress-bg-opacity: 0.3;
+
+    svg {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+    }
+
+    &--one-color {
+      --progress-stroke: #f89828;
+    }
+
+    &--two-color {
+      --progress-stroke: #F52F6E;
+    }
+
+    &--three-color {
+      --progress-stroke: #5A87FC;
+    }
+
+    &--four-color {
+      --progress-stroke: #03CEA4;
+    }
+  }
+
+  .progress {
+    stroke: var(--progress-stroke);
+    transform: rotate(-90deg) translateX(24px);
+    transform-origin: center;
+  }
+
+  .progress-bg {
+    stroke: var(--progress-stroke);
+    opacity: var(--progress-bg-opacity);
+  }
+
+  &__value {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1;
+    color: var(--color-ebony);
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+    color: var(--color-ebony);
+  }
+}

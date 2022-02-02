@@ -1,0 +1,35 @@
+.article-meta {
+  &__item {
+    position: relative;
+
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--color-storm);
+
+    &:not(:last-child) {
+      margin-right: 21px;
+
+      &::after {
+        content: "";
+
+        position: absolute;
+        right: -13px;
+        top: 2px;
+
+        width: 1px;
+        height: 11px;
+
+        background-color: var(--color-storm);
+      }
+    }
+
+    &--comments {
+      padding-left: 23px;
+
+      background-image: url('../img/recent-news/message.svg');
+      background-position: left center;
+      background-size: 16px 16px;
+      background-repeat: no-repeat;
+    }
+  }
+}

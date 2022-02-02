@@ -1,0 +1,40 @@
+.slider-nav {
+   display: flex;
+   align-items: center;
+
+   transform: translate(13px, -11px);
+
+   position: relative;
+   z-index: 10;
+
+   &__btn {
+      width: 48px;
+      height: 48px;
+
+      border-radius: 100%;
+      background-color: transparent;
+
+      transition: background-color 0.2s linear;
+
+      &.swiper-button-disabled {
+         opacity: 0.4;
+         pointer-events: none ;
+      }
+
+      @include hover {
+         background-color: var(--color-primary);
+
+         svg {
+            fill: var(--color-light);
+         }
+      }
+
+      svg {
+         width: 24px;
+         height: 24px;
+
+         fill: var(--color-clay);
+         transition: background-color 0.2s linear;
+      }
+   }
+}

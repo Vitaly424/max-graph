@@ -1,0 +1,16 @@
+.partners {
+   padding-top: 80px;
+   padding-bottom: 80px;
+   background-color: var(--color-athens);
+
+   &__title {
+      margin-bottom: 58px;
+   }
+
+   &__list {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      grid-column-gap: 101px;
+      grid-row-gap: 20px;
+   }
+}

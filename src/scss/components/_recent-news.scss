@@ -1,0 +1,30 @@
+.recent-news {
+  padding-bottom: 122px;
+
+  &__title {
+     margin-bottom: 60px;
+  }
+
+  &__learn {
+     margin-top: 80px;
+  }
+
+  &__item {
+    grid-column: 5 span;
+
+    &:first-child {
+      grid-column: 7 span;
+      grid-row: 2 span;
+    }
+
+    &--small {
+      .recent-article__descr {
+        display: none;
+      }
+
+      .recent-article__text {
+         padding: 12px 24px;
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+// если вы хотите использовать sass-переменные - удалите root
+// colors
+:root {
+  // base
+  --color-gray: rgb(66, 69, 81);
+  --color-light: #fff;
+  --color-storm: #787A80;
+  --color-ebony: #1E212C;
+  --color-clay: #424551; 
+  --color-primary: #FF5A30; 
+  --color-athens: #F4F5F7;  
+  --color-iron: #D7DADD;    
+
+  --grid-gap: 30;
+} 

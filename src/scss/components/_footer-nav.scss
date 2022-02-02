@@ -1,0 +1,21 @@
+.footer-nav {
+   padding-top: 17px;
+   padding-left: 54px;
+   display: flex;
+
+   &__col {
+      &:not(:last-child) {
+         margin-right: 125px;
+      }
+   }
+
+   &__item {
+      &:not(:last-child) {
+         margin-bottom: 11px;
+      }
+   }
+
+   &__link {
+      color: inherit;
+   }
+}

@@ -1,0 +1,42 @@
+.facts {
+   padding: 80px 0;
+   padding-top: 180px;
+   padding-bottom: 200px;
+
+   overflow: hidden;
+
+   margin-top: -62px;
+   background-color: var(--color-light);
+
+   position: relative;
+   
+   &::before {
+      content: "";
+      
+      position: absolute;
+      left: -3px;
+      top: -201px;
+
+      width: 570px;
+      height: 1065px;
+
+      background-image: url('../img/facts/bg-image.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+   }
+
+   &__list {
+      max-width: 736px;
+      margin-left: auto;
+      margin-right: auto;
+
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 48px;
+   }
+
+   &__title {
+      margin-bottom: 59px;
+   }
+}

@@ -1,0 +1,59 @@
+.footer {
+   padding: 80px 0;
+   color: rgba(#fff, 0.6);
+   background-color: var(--color-ebony); 
+
+   &__top {
+      display: flex;
+      align-items: center;
+
+      max-width: 466px;
+      margin-bottom: 22px;
+   }
+
+   &__logo {
+      margin-right: 62px;
+   }
+
+   &__left {
+      grid-column: 7 span;
+   }
+
+   &__descr {
+      width: 100%;
+      max-width: 466px;
+
+      font-size: 14px;
+      line-height: 1.5;
+   }
+
+   &__form {
+      grid-column: 5 span;
+   }
+
+   &__address {
+      grid-column: 4 span;
+   }
+
+   &__nav {
+      grid-column: 5 span;
+   }
+
+   &__copyright {
+      padding-top: 28px;
+      grid-column: 12 span;
+      
+      font-size: 12px;
+      line-height: 1.5;
+      color: var(--color-light);
+
+      span {
+         padding-left: 20px;
+
+         background-image: url('../img/svg/heart.svg');
+         background-size: 16px 16px;
+         background-position: left center;
+         background-repeat: no-repeat;
+      }
+   }
+}
